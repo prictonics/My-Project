@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Payment Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+<h1>Amount to pay: 85,00$</h1>
+</head>
+<body>
+     <section id="payment-form">
+     <h2>Payment</h2>
+
+     <form id="payment-information">
+       <label for="credit-card-number">Enter your Credit Card number:</label>
+         <input
+         id="credit-card-number" 
+         name="credit-card-number"
+         type="text"
+         inputmode="numeric"
+         autocomplete="cc-number"
+         placeholder="1234 5678 9012 3456"
+         maxlength="19"
+         required
+       >
+
+       <label for="card-number">Enter the full name on your Credit Card:</label>
+         <input
+         id="card-number"
+         name="card-number"
+         type="text"
+         required
+       >
+       
+       <label for="expiry-date">Enter the expiry date of your Credit Card:</label>
+         <input
+         id="expiry-date"
+         name="expiry-date"
+         type="date"
+         required
+       >
+       
+       <label for="cvv-cvc">Enter the security code of your Credit Card (cvv-cvc)</label>
+         <input
+         id="cvv-cvc"
+         name="cvv-cvc"
+         type="text"
+         inputmode="numeric"
+         maxlength="3"
+         required
+       >
+<h3> 
+<button id="submit-payment" button type="button">
+     Submit payment
+</button>
+</h3> 
+     </form>
+     </section>
+
+</body>
